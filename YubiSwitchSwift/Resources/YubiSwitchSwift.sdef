@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="YubiSwitch Swift Terminology">
+    <suite name="YubiSwitch Swift Suite" code="Yubi"
+        description="YubiSwitch Swift app scripting support">
+        <command name="KeyOn" code="yubicmOn" description="Enables yubikey">
+            <cocoa class="YubiKeyScriptCommand"/>
+        </command>
+        <command name="KeyOff" code="yubicOff" description="Disables yubikey">
+            <cocoa class="YubiKeyScriptCommand"/>
+        </command>
+        <class name="yubikey" code="yubi" description="Yubikey">
+            <cocoa class="NSApplication"/>
+            <property name="status" code="stat" type="boolean" description="Is the yubikey enabled?"/>
+        </class>
+    </suite>
+</dictionary>
